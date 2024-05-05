@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".find_doctor">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="12dp"
+    android:gravity="center"
+    android:text="@string/app_nam"
+    android:id="@+id/txt"
+    android:textColor="#FFC107"
+    android:textSize="24sp" />
+
+    <TextView
+        android:layout_below="@id/txt" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="12dp"
+    android:gravity="center"
+    android:text="Find doctor"
+    android:id="@+id/finddoctors"
+    android:textColor="#9C27B0"
+    android:textSize="24sp" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:rowCount="3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_column="0"
+        android:layout_row="0"
+        android:id="@+id/familyphysicianssss"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill_horizontal"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:layout_columnWeight="1"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/family_physicians"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family physicians"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_column="1"
+            android:id="@+id/Dietician"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill_horizontal"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            android:layout_columnWeight="1"
+            android:background="@drawable/language"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/dietician"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dieticien"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_column="0"
+            android:id="@+id/dentists"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill_horizontal"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            android:layout_columnWeight="1"
+            android:background="@drawable/language"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/dentist"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dentists"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_column="1"
+            android:id="@+id/cardsuregion"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill_horizontal"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            android:layout_columnWeight="1"
+            android:background="@drawable/language"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/surgeon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buy medicines"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_column="1"
+            android:id="@+id/Buy_medicines"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill_horizontal"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            android:layout_columnWeight="1"
+            android:background="@drawable/language"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/surgeon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Surgeon"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_column="0"
+            android:layout_row="2"
+            android:id="@+id/Cardioligigist"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill_horizontal"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            android:layout_columnWeight="1"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/cardiologists"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cardiologist"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_column="1"
+            android:layout_row="2"
+            android:id="@+id/backexit"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill_horizontal"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            android:layout_columnWeight="1"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/info"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+
+</RelativeLayout>
